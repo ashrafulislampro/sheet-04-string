@@ -1,2 +1,1 @@
-cout << X << endl;
-            return 0;
+cout << "lower: " << str[i] << endl;
