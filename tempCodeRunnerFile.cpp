@@ -1,1 +1,1 @@
-cout << "lower: " << str[i] << endl;
+cout << j + 1 << " = " << str2.size() << endl;
