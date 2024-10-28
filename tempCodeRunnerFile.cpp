@@ -1,1 +1,1 @@
-cout << j + 1 << " = " << str2.size() << endl;
+ // cout << (stm >> word) << endl;
