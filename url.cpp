@@ -24,5 +24,5 @@ int main()
         cout << pros << ": " << result << endl;
     }
 
-        return 0;
+    return 0;
 }

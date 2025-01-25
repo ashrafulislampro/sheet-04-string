@@ -5,25 +5,15 @@ int main()
 {
     string str;
     getline(cin, str);
-
-    stringstream stm(str);
-    vector<string> str2;
-
+    stringstream ss(str);
     string word;
-    while (stm >> word)
+    ss >> word;
+    reverse(word.begin(), word.end());
+    cout << word;
+    while (ss >> word)
     {
-
         reverse(word.begin(), word.end());
-        str2.push_back(word);
-    }
-    int len = str2.size();
-    for (int i = 0; i < len; i++)
-    {
-        cout << str2[i];
-        if (i < len)
-        {
-            cout << " ";
-        }
+        cout << " " << word;
     }
     return 0;
 }

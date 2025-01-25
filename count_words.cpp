@@ -8,28 +8,22 @@ int main()
     getline(cin, str);
     stringstream stm(str);
     string word;
+
     while (stm >> word)
     {
 
-        while (!word.empty() && (word.back() == '!' || word.back() == '?' || word.back() == '.' || word.back() == ','))
+        bool hasLetter = false;
+        for (char ch : word)
         {
-            word.pop_back();
-        }
-        bool isAlpha = true;
-        for (char c : word)
-        {
-            if (!isalpha(c))
+            if (isalpha(ch))
             {
-                isAlpha = false;
+                hasLetter = true;
                 break;
             }
         }
-
-        if (isAlpha && !word.empty())
-        {
+        if (hasLetter)
             count++;
-        }
     }
-    cout << count << endl;
+    cout << count;
     return 0;
 }
